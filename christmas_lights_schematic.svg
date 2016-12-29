@@ -13,7 +13,7 @@
    height="329"
    id="svg4136"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="schematics-project.svg">
+   sodipodi:docname="christmas_lights_schematic.svg">
   <metadata
      id="metadata4340">
     <rdf:RDF>
@@ -376,10 +376,10 @@
        y="210"
        width="120"
        height="360"
-       fill="#efd3d2"
-       stroke="#000000"
        pointer-events="none"
-       id="rect4216" />
+       id="rect4216"
+       stroke="#000000"
+       fill="#efd3d2" />
     <rect
        x="1029"
        y="279"
@@ -890,17 +890,5 @@
        stroke-miterlimit="10"
        pointer-events="none"
        id="path4336" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:44.94382095px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="895.52625"
-       y="351.09836"
-       id="text4342"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4344"
-         x="895.52625"
-         y="351.09836"
-         style="font-size:28.08988762px">Arduino</tspan></text>
   </g>
 </svg>
