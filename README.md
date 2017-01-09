@@ -7,7 +7,7 @@ My parents new house was finished just in time for Christmas, as a result we did
 **/* Will add more pictures and a video next time I am at home */**
 
 ## Schematic
-The circuit uses a NPN transistor as a low-side switch to control the lights wich allows it to power brighter LEDs, as the maximum current provided by the I/O pins of the arduino is 40mA, while the Vin pin can provide 200mA. Using the transistor wasn't strictly necessary as the current configuration of the circuit requires 37mA, see below:
+The circuit uses a NPN transistor as a low-side switch to control the lights wich allows it to power brighter LEDs, as the maximum current provided by the I/O pins of the arduino is 40mA, while the Vin pin can provide 1000mA. Using the transistor wasn't strictly necessary as the current configuration of the circuit requires 37mA, see below:
 
 <img src="http://www.sciweavers.org/tex2img.php?eq=%20I%20%3D%20%20%5Cfrac%7BV%7D%7BR%7D%20%3D%20%5Cfrac%7B5.5%20-%201.8%7D%7B100%7D%20%3D%200.037A%20%3D%2037%20mA&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt=" I =  \frac{V}{R} = \frac{5.5 - 1.8}{100} = 0.037A = 37 mA" width="303" height="43" />
 
