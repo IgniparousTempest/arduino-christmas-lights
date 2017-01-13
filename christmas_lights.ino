@@ -2,17 +2,19 @@
 
 int ledPin = 9;    // LED connected to digital pin 9
 
+char morse_code[] = "-- . .-. .-. -.-- / -.-. .... .-. .. ... - -- .- ...";
+
 void setup() {
-  // put your setup code here, to run once:
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  
-  char morse_code[] = "-- . .-. .-. -.-- / -.-. .... .-. .. ... - -- .- ...";
   execute_morse_code(morse_code);
 }
 
+/**
+ * Outputs Morse code over ledPin. 
+ * A '-' is a "pulse" and a '.' is a flash.
+ */
 void execute_morse_code(char* morse_code)
 {
   int i;
@@ -42,6 +44,9 @@ void execute_morse_code(char* morse_code)
   }
 }
 
+/**
+ * Flashes ledPin.
+ */
 void led_flash()
 {
   analogWrite(ledPin, 255);
@@ -49,6 +54,10 @@ void led_flash()
   analogWrite(ledPin, 0);
 }
 
+/**
+ * Pulses ledPin.
+ * Increases duty cycle from 0% to 100%, then back to 0%.
+ */
 void led_pulse()
 {
   int fadeValue;
@@ -57,7 +66,7 @@ void led_pulse()
   for (fadeValue = 0; fadeValue <= 255; fadeValue += 5) {
     // sets the value (range from 0 to 255):
     analogWrite(ledPin, fadeValue);
-    // wait for 30 milliseconds to see the dimming effect
+    // wait for 30 milliseconds to see the bright effect
     delay(30);
   }
 
@@ -68,17 +77,17 @@ void led_pulse()
     // wait for 30 milliseconds to see the dimming effect
     delay(30);
   }
+  
+  analogWrite(ledPin, 0);
 }
 
 void led_short_pause()
 {
-  analogWrite(ledPin, 0);
   delay(800);
 }
 
 void led_long_pause()
 {
-  analogWrite(ledPin, 0);
   delay(1500);
 }
 
@@ -86,4 +95,3 @@ void led_pause()
 {
   delay(400);
 }
-
