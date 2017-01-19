@@ -15,6 +15,6 @@ A chain can only be made up of a single LED colour, otherwise only the colour wi
 
 <img width="100%" src="https://rawgithub.com/IgniparousTempest/arduino-christmas-lights/master/christmas_lights_schematic.svg"/>
 
-### Breadboard Diagram
+## Breadboard Diagram
 
 <img width="100%" src="https://rawgithub.com/IgniparousTempest/arduino-christmas-lights/master/christmas_lights_breadboard.svg"/>
